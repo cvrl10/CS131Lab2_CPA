@@ -30,6 +30,9 @@ public class Application
 		
 		Wizard game2 = new Wizard();//testing empty argument constructor
 		game2.setName("Harry");
+		game2.setHealth(50);
 		System.out.println(game2);
+		game2.takeDamage(50);//object health should now be 0 since takeDamage() was evoked when object was unlocked.
+		System.out.println(game2.getHealth());
 	}//end main
 }
